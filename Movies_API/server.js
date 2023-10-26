@@ -5,7 +5,7 @@ const postReq=require('./methods/post-request')
 const putReq=require('./methods/put-request')
 const deleteReq=require('./methods/delete-request')
 
-let movies=require()
+let movies=require('./movies.json')
 require("dotenv").config();
 
 const PORT = process.env.PORT || 3600;
