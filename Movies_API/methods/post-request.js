@@ -8,7 +8,7 @@ module.exports=async (req,res)=>{
             await req.movies.push(body);
             await writeFile(req.movies);
             res.writeHead(201,{"Content-Type":"application/json"});
-            res.write(JSON.stringify({message:"updated sucessfully"}))
+            res.write(JSON.stringify({message:"Added sucessfully"}))
             res.end();
         } catch (error) {
             console.log(error);
