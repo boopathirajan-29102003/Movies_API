@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "5ec2427b-b145-4254-8e37-5b1e1738f29d",
+		"name": "Movies_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24873515"
+	},
+	"item": [
+		{
+			"name": "All movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/api/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Single movie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/api/movies/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"movies",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add movie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"id\": 8,\r\n      \"title\": \"leo\",\r\n      \"year\": 1994,\r\n      \"genre\": \"Drama\",\r\n      \"country\": \"USA\",\r\n      \"director\": \"Frank Darabont\",\r\n      \"actors\": [\r\n        \"Tim Robbins\",\r\n        \"Morgan Freeman\",\r\n        \"Bob Gunton\",\r\n        \"Clancy Brown\",\r\n        \"William Sadler\"\r\n      ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/movies/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"movies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update movie",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"title\": \"kaithi\",\r\n      \"year\": 1994,\r\n      \"genre\": \"Drama\",\r\n      \"country\": \"USA\",\r\n      \"director\": \"Frank Darabont\",\r\n      \"actors\": [\r\n        \"Tim Robbins\",\r\n        \"Morgan Freeman\",\r\n        \"Bob Gunton\",\r\n        \"Clancy Brown\",\r\n        \"William Sadler\"\r\n      ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/movies/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"movies",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete movie",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"id\": 8,\r\n      \"title\": \"leo\",\r\n      \"year\": 1994,\r\n      \"genre\": \"Drama\",\r\n      \"country\": \"USA\",\r\n      \"director\": \"Frank Darabont\",\r\n      \"actors\": [\r\n        \"Tim Robbins\",\r\n        \"Morgan Freeman\",\r\n        \"Bob Gunton\",\r\n        \"Clancy Brown\",\r\n        \"William Sadler\"\r\n      ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/movies/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"movies",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
